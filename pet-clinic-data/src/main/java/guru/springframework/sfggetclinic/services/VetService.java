@@ -1,0 +1,14 @@
+package guru.springframework.sfggetclinic.services;
+
+import guru.springframework.sfggetclinic.model.Vet;
+
+import java.util.Set;
+
+public interface VetService {
+
+    Vet findById(Long id);
+
+    Vet save(Vet owner);
+
+    Set<Vet> findAll();
+}
