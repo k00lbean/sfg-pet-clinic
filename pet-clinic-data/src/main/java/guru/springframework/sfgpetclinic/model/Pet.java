@@ -1,6 +1,8 @@
+
 package guru.springframework.sfgpetclinic.model;
 
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -11,10 +13,9 @@ import java.util.Set;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(name = "pets")
-public class Pet extends BaseEntity {
+public class Pet extends BaseEntity{
 
     @Column(name = "name")
     private String name;
